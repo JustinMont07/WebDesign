@@ -1,0 +1,327 @@
+/*
+  Colors from https://coolors.co/323340-184682-1c75b5-81b2e5-383c66 and close variations of them (due to a limit of 5 colors on Coolors.co)
+*/
+
+:root {
+  --border-a-color: #0db8e3;
+  --main-background: #323340;
+  --a-tag: #81B2E5;
+  --header-h1: #1C75B5;
+  --header-background: #383C66;
+  --secondary-background: #184682;
+  
+}
+
+body{
+  font-family: Helvetica;
+  background: gray url("background.jpg");
+  color: white;
+}
+
+article{
+  background: var(--main-background);
+  margin: auto;
+  width: 900px;
+  padding: 10px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 5px;
+  
+}
+
+a{
+  color:  var(--a-tag);
+  text-decoration: none;
+}
+a:hover{
+  color: var(--border-a-color);
+  text-decoration: underline;
+}
+
+a:active{
+  color: #28333B;
+}
+header h1{
+  font-family: Verdana, sans-serif;
+  color: var(--header-h1);
+  text-align: center;
+  text-shadow: .1em .1em .25em #176298;
+  font-size: 2.5em;
+}
+
+
+nav{
+  background: var(--secondary-background);
+  border-radius: 6px;
+  
+  
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav ul li{
+  list-style: none;
+  padding: 4px;
+  position: relative;
+  display: block;
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  padding: 4px 10px;
+  transition-property: color;
+  transition-duration: .5s;
+  transition-timing-function: ease-out;
+}
+
+nav ul li a:hover{
+  
+  text-decoration: none;
+  
+}
+
+
+
+nav ul li ul{
+  display: none;
+  
+}
+
+nav ul li:hover ul{
+  display: block;
+  position: absolute;
+  margin-top: 5px;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px;
+  
+  
+}
+
+nav ul ul li{
+  width: 100%;
+  display: block;
+}
+
+nav ul li:hover ul li:hover a {
+  color: var(--border-a-color);
+  text-decoration: none;
+  text-align: center;
+  
+}
+
+nav ul li:hover ul li {
+  
+  background: var(--secondary-background);
+  border: 3px solid var(--border-a-color);
+  text-decoration: none;
+  text-align: center;
+  margin-top: 2px;
+  border-radius: 5px;
+}
+
+
+
+
+li mark{
+  background-color: var(--header-background);
+  border-radius: 5px;
+}
+
+
+
+table, th, td{
+  border: 1px solid var(--secondary-background);
+  
+}
+th, td{
+  padding: 4px;
+}
+
+h1{
+  font-family: sans-serif;  
+}
+
+header{
+  width: 900px;
+  font-family: sans-serif;
+  background-color: var(--header-background); 
+  margin: auto;
+  border-radius: 5px;
+  
+  box-shadow: 5px 5px 5px black;
+}
+
+header h2, header h3{
+  text-align: center;
+ 
+  
+}
+
+header h3{
+  margin-top: -6px;
+}
+
+footer{
+  clear: both;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h3{
+  font-size: 125%;
+}
+
+p, .courseList{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+#contact, #info{
+  width: 50%;
+  text-align: center;
+}
+
+#background, #goals{
+  width: 50%;
+
+}
+
+#places, #courses, #books{
+  flex: 1 0 50%;
+}
+
+#quotes{
+  flex: 100%;
+}
+
+
+
+#courses h3, #books h3, #quotes h3{
+  margin-right: 5px;
+}
+
+
+#gallery{
+  margin: auto;
+}
+.design img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.content{
+  background: var(--main-background);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  justify-content: space-around;
+  width: 800px;
+  margin: auto;
+  
+  
+}
+
+#education, #employment, #skills{
+  padding: 10px
+}
+
+
+
+input[type=text], input[type=email], input[type=password], input[type=date], select {
+  box-sizing: border-box;
+  width: 200px;
+  padding: 10px; 
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+   width: 200px;
+   background-color: var(--secondary-background);
+   color: white;
+   padding: 15px;
+   margin: 10px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+input[type=submit]:hover {
+   background-color: var(--border-a-color);
+}
+
+strong{
+  font-size: 110%;
+}
+
+#images{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#images img{
+  border: 10px solid black;
+  border-image: url("frame.png") 15 15 stretch;
+}
+
+#image1{
+  
+  flex: 1 0 50%;
+  height: 175px;
+  margin: 10px;
+  transition-property: height;
+  transition-duration: .25s;
+  transition-timing-function: ease-in;
+  
+}
+#image1:hover{
+  height: 200px;
+}
+
+#image2{
+  flex: 1 0 50%;
+  height: 175px;
+  margin: 10px;
+  transition-property: height;
+  transition-duration: .25s;
+  transition-timing-function: ease-in;
+}
+#image2:hover{
+  height: 200px;
+}
+
+#image3{
+  flex: 1 0 100%;
+  width: 300px;
+  margin: 10px;
+  transition-property: width;
+  transition-duration: .25s;
+  transition-timing-function: ease-in;
+}
+#image3:hover{
+  width: 325px;
+}
+
+#homepage{
+  flex: 0 0 40%;
+}
+
+
+
+
+
+
+
+

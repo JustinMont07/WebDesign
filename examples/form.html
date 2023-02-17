@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Form Example</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+<article>
+  <header>
+    <h1>Justin Montagne</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+        <li><a href="../courses.html">Courses</a></li>
+        <li><a href="index.html">Examples</a>
+          <ul>
+            <li><a href="table.html">Table</a></li>
+            <li><mark><a href="form.html">Form</a></mark></li>
+          </ul>
+        </li>
+        <li><a href="../gallery/index.html">Photos</a>
+          <ul>
+            <li><a href="../gallery/photo1.html">Photo 1</a></li>
+            <li><a href="../gallery/photo2.html">Photo 2</a></li>
+            <li><a href="../gallery/photo3.html">Photo 3</a></li>
+          </ul>
+        </li>
+        <li><a href="../design/index.html">Design</a></li>
+      </ul>
+    </nav>
+    <h2>HTML Examples</h2>
+    <h3>Form</h3>
+  </header>
+  
+
+    <div class="content">
+      <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+        <fieldset>
+          <legend>Login</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+        </fieldset>
+        <fieldset>
+          <legend>Origin</legend>
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday">
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country">
+        </fieldset>
+        <fieldset>
+          <legend>Interests (Choose as many as you want)</legend>
+          <input type="checkbox" name="interests[]" value="Skiing" id="skiing"><label for="skiing">Skiing</label><br>
+          <input type="checkbox" name="interests[]" value="Biking" id="biking"><label for="biking">Biking</label><br>
+          <input type="checkbox" name="interests[]" value="Running" id="running"><label
+            for="running">Running</label><br>
+          <input type="checkbox" name="interests[]" value="Sleeping" id="sleeping"><label
+            for="sleeping">Sleeping</label><br>
+          <input type="checkbox" name="interests[]" value="Reading" id="reading"><label
+            for="reading">Reading</label><br>
+          Interest level in competetive sleeping:<br>
+          Low
+          <input type="range" id="sleepingInterest" name="sleepingInterest" value=50 min=0 max=100>
+          High
+        </fieldset>
+        <fieldset>
+          <legend>Class</legend>
+          <input type="radio" name="class" value="Freshman" id="freshman"><label for="freshman">Freshman</label><br>
+          <input type="radio" name="class" value="Sophomore" id="sophomore"><label for="sophomore">Sophomore</label><br>
+          <input type="radio" name="class" value="Junior" id="junior"><label for="junior">Junior</label><br>
+          <input type="radio" name="class" value="Senior" id="senior"><label for="senior">Senior</label><br>
+          <label for="graduationYear">Graduation Year</label>
+          <select name="graduationYear" id="graduationYear">
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+          </select>
+        </fieldset>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <footer>
+      Copyright &copy; 2022, <a href="mailto:ja28mont@siena.edu">Justin Montagne</a>
+    </footer>
+  </article>
+</body>
+
+</html>
